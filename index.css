@@ -1,5 +1,177 @@
-html, body {
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #f2f3f5;
+  color: #121212;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.feed {
+  width: 375px;
+  height: 545px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.feed__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px 16px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.feed__brand {
+  margin: 0;
+}
+
+.feed__logo {
+  height: 32px;
+  width: auto;
+  display: block;
+}
+
+.feed__profile {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 2px solid #f2f3f5;
+}
+
+.feed__posts {
+  flex: 1;
+  overflow-y: auto;
+  background-color: #ffffff;
+}
+
+.feed__posts::-webkit-scrollbar {
+  width: 6px;
+}
+
+.feed__posts::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.feed__posts::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.post:last-of-type {
+  border-bottom: none;
+}
+
+.post__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+}
+
+.post__avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.post__author {
+  display: flex;
+  flex-direction: column;
+}
+
+.post__title {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.post__location {
+  margin: 2px 0 0;
+  font-size: 0.78rem;
+  color: #6f6f6f;
+}
+
+.post__media {
+  margin: 0;
+}
+
+.post__image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.post__body {
+  padding: 16px 20px 18px;
+}
+
+.post__actions {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  padding: 0;
+  margin: 0 0 12px;
+}
+
+.icon-button {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.icon-button img {
+  display: block;
+  width: 22px;
+  height: 22px;
+}
+
+.icon-button:focus-visible {
+  outline: 2px solid #1d76ff;
+  outline-offset: 2px;
+}
+
+.post__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.85rem;
+}
+
+.post__likes {
+  margin: 0;
+  font-weight: 600;
+}
+
+.post__caption {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.post__caption strong {
+  margin-right: 6px;
+}

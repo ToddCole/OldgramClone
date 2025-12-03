@@ -1,9 +1,177 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <img src="images/logo.png">
-        <script src="index.js"></script>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oldgram Clone</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main class="feed" aria-labelledby="feed-heading">
+      <header class="feed__header">
+        <h1 id="feed-heading" class="feed__brand">
+          <img class="feed__logo" src="images/logo.png" alt="Oldgram" />
+        </h1>
+        <img
+          class="feed__profile"
+          src="images/user-avatar.png"
+          alt="Profile avatar"
+        />
+      </header>
+
+      <section class="feed__posts" aria-label="Latest posts">
+        <article class="post">
+          <header class="post__header">
+            <img
+              class="post__avatar"
+              src="images/avatar-vangogh.jpg"
+              alt="Portrait of Vincent van Gogh"
+            />
+            <div class="post__author">
+              <h2 class="post__title">Vincent van Gogh</h2>
+              <p class="post__location">Zundert, Netherlands</p>
+            </div>
+          </header>
+          <figure class="post__media">
+            <img
+              class="post__image"
+              src="images/post-vangogh.jpg"
+              alt="A self-portrait painted by Vincent van Gogh"
+            />
+          </figure>
+          <section class="post__body">
+            <ul class="post__actions" aria-label="Post actions">
+              <li>
+                <button type="button" class="icon-button" aria-label="Like">
+                  <img src="images/icon-heart.png" alt="" />
+                </button>
+              </li>
+              <li>
+                <button type="button" class="icon-button" aria-label="Comment">
+                  <img src="images/icon-comment.png" alt="" />
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  class="icon-button"
+                  aria-label="Share via direct message"
+                >
+                  <img src="images/icon-dm.png" alt="" />
+                </button>
+              </li>
+            </ul>
+            <section class="post__meta">
+              <p class="post__likes"><strong>21,492 likes</strong></p>
+              <p class="post__caption">
+                <strong>vincey1853</strong> just took a few strokes.
+              </p>
+            </section>
+          </section>
+        </article>
+
+        <article class="post">
+          <header class="post__header">
+            <img
+              class="post__avatar"
+              src="images/avatar-courbet.jpg"
+              alt="Portrait of Gustave Courbet"
+            />
+            <div class="post__author">
+              <h2 class="post__title">Gustave Courbet</h2>
+              <p class="post__location">Ornans, France</p>
+            </div>
+          </header>
+          <figure class="post__media">
+            <img
+              class="post__image"
+              src="images/post-courbet.jpg"
+              alt="Gustave Courbet relaxing beside a lake"
+            />
+          </figure>
+          <section class="post__body">
+            <ul class="post__actions" aria-label="Post actions">
+              <li>
+                <button type="button" class="icon-button" aria-label="Like">
+                  <img src="images/icon-heart.png" alt="" />
+                </button>
+              </li>
+              <li>
+                <button type="button" class="icon-button" aria-label="Comment">
+                  <img src="images/icon-comment.png" alt="" />
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  class="icon-button"
+                  aria-label="Share via direct message"
+                >
+                  <img src="images/icon-dm.png" alt="" />
+                </button>
+              </li>
+            </ul>
+            <section class="post__meta">
+              <p class="post__likes"><strong>12,873 likes</strong></p>
+              <p class="post__caption">
+                <strong>gus1819</strong> I'm feelin a little stressed tbh.
+              </p>
+            </section>
+          </section>
+        </article>
+
+        <article class="post">
+          <header class="post__header">
+            <img
+              class="post__avatar"
+              src="images/avatar-ducreux.jpg"
+              alt="Portrait of Joseph Ducreux"
+            />
+            <div class="post__author">
+              <h2 class="post__title">Joseph Ducreux</h2>
+              <p class="post__location">Paris, France</p>
+            </div>
+          </header>
+          <figure class="post__media">
+            <img
+              class="post__image"
+              src="images/post-ducreux.jpg"
+              alt="Joseph Ducreux pointing playfully at the viewer"
+            />
+          </figure>
+          <section class="post__body">
+            <ul class="post__actions" aria-label="Post actions">
+              <li>
+                <button type="button" class="icon-button" aria-label="Like">
+                  <img src="images/icon-heart.png" alt="" />
+                </button>
+              </li>
+              <li>
+                <button type="button" class="icon-button" aria-label="Comment">
+                  <img src="images/icon-comment.png" alt="" />
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  class="icon-button"
+                  aria-label="Share via direct message"
+                >
+                  <img src="images/icon-dm.png" alt="" />
+                </button>
+              </li>
+            </ul>
+            <section class="post__meta">
+              <p class="post__likes"><strong>15,137 likes</strong></p>
+              <p class="post__caption">
+                <strong>jd1735</strong> gm friends! Which coin are you stacking
+                today?
+              </p>
+            </section>
+          </section>
+        </article>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
 </html>
